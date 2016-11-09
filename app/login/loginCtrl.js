@@ -1,6 +1,9 @@
 (function(){
     function loginCtrlfn($state,$scope){
-        console.log($state);
+        $scope.data=$state.params.homeData;
+        $scope.edit=function(){
+            $state.go("Register",{})
+        };
         
     }
     

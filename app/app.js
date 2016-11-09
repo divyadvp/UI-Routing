@@ -10,13 +10,17 @@
         name:"home",
         templateUrl:"app/home/home.html",
         url:"/home",
+        controller:"homeCtrl"
         }
     var regObj={
         
         name:"Register",
         templateUrl:"app/register/register.html",
         url:"/urlmine",
-        controller: "registerCtrl"
+        controller: "registerCtrl",
+        params:{
+        loginData:""
+    }
         
     }
     var loginObj={
