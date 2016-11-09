@@ -5,5 +5,5 @@
         
     }
     
-    angular.module("home").controller(homeCtrl,["$state","homeCtrl"]);
+    angular.module("home").controller("homeCtrl",["$state",homeCtrl]);
 })();

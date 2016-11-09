@@ -3,13 +3,13 @@
         $scope.user={};
         $scope.register=function(){
            
-        $state.go("home",{
+        $state.go("login",{
                 homeData:$scope.user
            })
         };
         
     }
     
-    angular.module("register").controller(registerCtrl,["$scope","$state","registerCtrl"]);
+    angular.module("register").controller("registerCtrl",["$scope","$state",registerCtrl]);
     
 })();

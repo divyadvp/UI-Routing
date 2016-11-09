@@ -4,7 +4,7 @@
     angular.module("myApp",["header","home","register","login","ui.router"]);
     
     angular.module("myApp").config(["$stateProvider", "$urlRouterProvider", function($stateProvider,$urlRouterProvider){
-       // $urlRouterProvider.otherwise("/home");
+      // $urlRouterProvider.otherwise("/home");
         
     var homeObj={
         name:"home",
@@ -23,6 +23,7 @@
         name:"login",
         templateUrl:"app/login/login.html",
         url:"/login",
+        controller:"loginCtrl",
         params:{
             homeData:""
         }
