@@ -5,7 +5,7 @@
            
         $state.go("login",{
                 homeData:$scope.user
-           })
+           });
         };
         
     }
