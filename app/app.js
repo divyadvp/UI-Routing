@@ -1,7 +1,7 @@
 (function(){
+    /*,"LocalStorageModule"*/
     
-    
-    angular.module("myApp",["header","home","register","login","ui.router"]);
+    angular.module("myApp",["header","home","register","login","edit","ui.router"]);
     
     angular.module("myApp").config(["$stateProvider", "$urlRouterProvider", function($stateProvider,$urlRouterProvider){
       // $urlRouterProvider.otherwise("/home");
@@ -17,10 +17,7 @@
         name:"Register",
         templateUrl:"app/register/register.html",
         url:"/urlmine",
-        controller: "registerCtrl",
-        params:{
-        loginData:""
-    }
+        controller: "registerCtrl"
         
     }
     var loginObj={
@@ -34,11 +31,23 @@
         
     }
     
+    var editObj={
+        templateUrl:"app/edit/edit.html",
+        url:"/edit",
+        controller:"editCtrl",
+        params:{
+            editData:""
+        }
+        
+        
+    }
+    
     
         
         $stateProvider.state("Home",homeObj);
         $stateProvider.state("Register",regObj);
         $stateProvider.state("login",loginObj);
+        $stateProvider.state("edit",editObj);
         
         
     }]);
