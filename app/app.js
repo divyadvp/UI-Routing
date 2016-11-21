@@ -1,7 +1,7 @@
 (function(){
     /*,"LocalStorageModule"*/
     
-    angular.module("myApp",["header","home","register","login","edit","ui.router"]);
+    angular.module("myApp",["header","home","register","login","edit","ui.router","LocalStorageModule"]);
     
     angular.module("myApp").config(["$stateProvider", "$urlRouterProvider", function($stateProvider,$urlRouterProvider){
       // $urlRouterProvider.otherwise("/home");
